@@ -78,7 +78,8 @@ class Board extends React.Component {
       playerOneBoxes: [],
       playerTwoBoxes: [],
       currentPlayer: this.players[0],
-    })
+    },this.refreshBoard)
+    
   }
 
   handleSquareClick = (box) => {
