@@ -26,8 +26,6 @@ export const getWinningBoxes = (array, parts) => {
   let horizontalBoxes = [];
   let rightDiagonal = [];
   let leftDiagonal = [];
-  console.log(array, parts)
-  // console.log(verticalBoxes, horizontalBoxes, rightDiagonal, leftDiagonal)
 
   for (let i = 0; i < parts; i++) {
     let verticalChunks = [];
