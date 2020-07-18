@@ -1,0 +1,21 @@
+.square {
+  background: #E8E8ED;
+  border-style: solid;
+  font-size: 21px;
+  font-weight: 700;
+  height: 100%;
+  width: 100%;
+  border-width: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.xPlayer {
+ background: #92C9BD;
+}
+
+.oPlayer {
+  background: #EEAABB;
+}
