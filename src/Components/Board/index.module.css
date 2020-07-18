@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.squareGrid {
+  width: 278px;
+  height: 278px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border-style: solid;
+  border-width: 0.5px;
+}
+
+.playerText {
+  padding: 5px;
+  font-weight: 550;
+  font-size: 20px;
+  color: cadetblue;
+}
+
+.resetBtn {
+  padding:10px;
+  color: #fff;
+  background: cadetblue;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.8s ease;
+  font-size: 16px;
+}
+
+.resetBtn:hover {
+  background: #DA4167
+}
+
+.sizeSelect {
+  width: 89px;
+  padding: 10px;
+  background: transparent;
+  color: cadetblue;
+  border-radius: 5px;
+  margin-right: 10px;
+  border-color: cadetblue;
+  outline: none;
+  font-size: 15px;
+}
+
+.sizeSelect>option {
+  padding: 10px;
+  background: #2E2E3A;
+  color: cadetblue;
+  border-radius: 5px;
+  margin-right: 10px;
+  border-color: cadetblue;
+  outline: none;
+}
+
+.resetBtn:active,.resetBtn:hover, .resetBtn:active {
+  border: none;
+  outline: none;
+}
+
+.infoWrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.playerTextWrapper {
+  text-align: left;
+}
+
+@media only screen and (max-width: 1024px) {
+  .infoWrapper {
+    flex-direction: column;
+  }
+}
