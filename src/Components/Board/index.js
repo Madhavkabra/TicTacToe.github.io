@@ -128,22 +128,25 @@ class Board extends React.Component {
             <div className={styles.playerText}>Next Player: {winner ? '-' : currentPlayer}</div>
             <div className={styles.playerText}>Winner: {winner ? winner : 'None'}</div>
           </div>
-          <div>
-          <select
-          className={styles.sizeSelect}
-            value={this.state.boardSize}
-            onChange={(event) => this.setBoardSize(Number(event.target.value))}
-          >
-            <option value={2}>2</option>
-            <option value={3}>3</option>
-            <option value={4}>4</option>
-            <option value={5}>5</option>
-            <option value={6}>6</option>
-            <option value={7}>7</option>
-            <option value={8}>8</option>
-            <option value={9}>9</option>
-          </select>
-          <button className={styles.resetBtn} onClick={this.resetGame}>Reset Game</button>
+          <div className={styles.optionWrapper}>
+            <fieldset className={styles.sizeSelect}>
+              <legend>Game size</legend>
+              <select
+                className={styles.select}
+                value={this.state.boardSize}
+                onChange={(event) => this.setBoardSize(Number(event.target.value))}
+              >
+                <option value={2}>2</option>
+                <option value={3}>3</option>
+                <option value={4}>4</option>
+                <option value={5}>5</option>
+                <option value={6}>6</option>
+                <option value={7}>7</option>
+                <option value={8}>8</option>
+                <option value={9}>9</option>
+              </select>
+            </fieldset>
+            <button className={styles.resetBtn} onClick={this.resetGame}>Reset Game</button>
           </div>
         </div>
         <div className={styles.squareGrid}>
